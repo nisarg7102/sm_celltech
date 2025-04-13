@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    /* Off-white background */
+    color:black;
+    /* Dark gray text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:rgb(7, 131, 254)
+}
+
+
+.navbar-light .navbar-brand {
+    color: white;
+    font-size: xx-large;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:red;
+    /* Golden yellow navbar link hover color */
+}
+
+
+.card-title {
+    color: red;
+}
+
+.dropdown .btn-secondary {
+    background-color:red; 
+    /* Orange background */
+    border-color:red; 
+    /* Orange border */
+}
+
+.dropdown .btn-secondary:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: rgb(7, 131, 254);
+    color:white;
+    padding: 4rem 2rem 2rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .footer-section a {
+    display: block;
+    color:white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color:black;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid white;
+    background-color: rgb(7, 131, 254);
+    
+  }
