@@ -75,50 +75,58 @@
           // `;
 
           document.getElementById("product-detail").innerHTML = `
-  <div class="row">
-    <div class="col-md-6">
-      <img src="${product.image}" alt="${product.alt}" class="img-fluid rounded">
+<div class="container py-5">
+  <div class="row align-items-center mb-5 animate__animated animate__fadeInUp">
+    <div class="col-md-6 text-center">
+      <img src="${product.image}" alt="${product.alt}" class="img-fluid rounded shadow-lg" style="max-height:400px;">
     </div>
     <div class="col-md-6">
-      <h1 class="mb-3">${product.title}</h1>
-      <p>${product.description}</p>
+      <h1 class="display-5 fw-bold mb-3">${product.title}</h1>
+      <p class="lead">${product.description}</p>
     </div>
   </div>
-  <!-- Molecular Formula -->
-  <div class="row">
-    <div class="col-md-6"><strong>Molecular Formula:</strong></div>
-    <div class="col-md-6">${product.molecularFormula}</div>
+
+  <div class="card shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
+    <div class="card-body">
+      <h3 class="card-title mb-4 text-primary border-bottom pb-2">Product Specifications</h3>
+
+      <div class="row mb-3">
+        <div class="col-md-6 fw-bold"><i class="bi bi-beaker"></i> Molecular Formula:</div>
+        <div class="col-md-6">${product.molecularFormula}</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 fw-bold"><i class="bi bi-droplet-half"></i> Matter State:</div>
+        <div class="col-md-6">${product.matterState}</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 fw-bold"><i class="bi bi-eye"></i> Appearance:</div>
+        <div class="col-md-6">${product.appearance}</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 fw-bold"><i class="bi bi-award"></i> Grade:</div>
+        <div class="col-md-6">${product.grade}</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 fw-bold"><i class="bi bi-box-seam"></i> Packaging:</div>
+        <div class="col-md-6">${product.packaging}</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 fw-bold"><i class="bi bi-box-arrow-in-down"></i> Storage & Handling:</div>
+        <div class="col-md-6">${product.storageHandling}</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 fw-bold"><i class="bi bi-lightbulb"></i> Applications:</div>
+        <div class="col-md-6">${product.applications}</div>
+      </div>
+    </div>
   </div>
-  <!-- Matter State -->
-  <div class="row">
-    <div class="col-md-6"><strong>Matter State:</strong></div>
-    <div class="col-md-6">${product.matterState}</div>
-  </div>
-  <!-- Appearance -->
-  <div class="row">
-    <div class="col-md-6"><strong>Appearance:</strong></div>
-    <div class="col-md-6">${product.appearance}</div>
-  </div>
-  <!-- Grade -->
-  <div class="row">
-    <div class="col-md-6"><strong>Grade:</strong></div>
-    <div class="col-md-6">${product.grade}</div>
-  </div>
-  <!-- Packaging -->
-  <div class="row">
-    <div class="col-md-6"><strong>Packaging:</strong></div>
-    <div class="col-md-6">${product.packaging}</div>
-  </div>
-  <!-- Storage and Handling -->
-  <div class="row">
-    <div class="col-md-6"><strong>Storage & Handling:</strong></div>
-    <div class="col-md-6">${product.storageHandling}</div>
-  </div>
-  <!-- Applications -->
-  <div class="row">
-    <div class="col-md-6"><strong>Applications:</strong></div>
-    <div class="col-md-6">${product.applications}</div>
-  </div>
+</div>
 `;
         })
         .catch((error) => {
