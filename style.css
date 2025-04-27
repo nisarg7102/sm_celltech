@@ -1,50 +1,60 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:white;
+    background-color:white;  
     /* Off-white background */
     color:black;
     /* Dark gray text */
 }
 
 h1,
-h2,
+h2
+{
+  color: rgb(0, 75, 150);
+}
 h3,
 h4,
 h5,
 h6 {
-    color:rgb(7, 131, 254)
+    color:rgb(0, 75, 150);
 }
-
+.carousel-item{
+  color: white;
+  font-size: xx-large;
+}
 
 .navbar-light .navbar-brand {
     color: white;
     font-size: xx-large;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.nav-link {
     color:black;
+    margin: 0 20px;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.nav-link:hover {
     color:red;
-    /* Golden yellow navbar link hover color */
 }
 
 
 .card-title {
-    color: red;
+    color: rgb(0, 75, 150);
 }
 
-.dropdown .btn-secondary {
-    background-color:red; 
-    /* Orange background */
-    border-color:red; 
-    /* Orange border */
+.btn-secondary {
+  background-color:white; 
+  text-decoration:none;
+  color: black;
+  border-color:white; 
+  font-size: x-large;
 }
 
-.dropdown .btn-secondary:hover {
-    transform: scale(1.10);
-    transition: transform 0.3s ease; 
+.btn-secondary:hover {
+  background-color: white;
+  text-decoration:none;
+  color:black;
+  transform: scale(1.20);
+  transition: transform 0.3s ease; 
 }
 
 .card:hover {
@@ -53,7 +63,7 @@ h6 {
 }
 
 footer {
-    background-color: rgb(7, 131, 254);
+    background-color:black;
     color:white;
     padding: 4rem 2rem 2rem;
   }
@@ -88,6 +98,15 @@ footer {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid white;
-    background-color: rgb(7, 131, 254);
+    background-color: rgb(0, 75, 150);
     
   }
+
+  #logo{
+    background-color: aliceblue;
+  }
+  
+#logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
