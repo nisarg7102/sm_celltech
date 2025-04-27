@@ -55,6 +55,7 @@
       /* Product cards */
       .card-img-top {
         height: 250px;
+        width: 100%;
         object-fit: cover;
         object-position: center center;
       }
@@ -292,63 +293,12 @@
       </div>
     </section>
 
-    <!-- Products Section -->
     <section id="products" class="container my-5">
       <h1 class="text-center fw-bold mb-4 text-decoration-underline">
         Our Products
       </h1>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100">
-            <img src="pro1" class="card-img-top" alt="Ammonium Persulphate" />
-            <div class="card-body">
-              <h5 class="card-title">Ammonium Persulphate</h5>
-              <p class="card-text">
-                A strong oxidizing agent used in various industrial
-                applications.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100">
-            <img src="pro2" class="card-img-top" alt="Sodium Persulphate" />
-            <div class="card-body">
-              <h5 class="card-title">Sodium Persulphate</h5>
-              <p class="card-text">
-                Used as a bleaching agent and an etchant for printed circuit
-                boards.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100">
-            <img src="pro1" class="card-img-top" alt="Ammonium Sulphate" />
-            <div class="card-body">
-              <h5 class="card-title">Ammonium Sulphate</h5>
-              <p class="card-text">
-                An efficient fertilizer for various soil types and industrial
-                uses.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100">
-            <img src="pro3" class="card-img-top" alt="Potassium Persulphate" />
-            <div class="card-body">
-              <h5 class="card-title">Potassium Persulphate</h5>
-              <p class="card-text">
-                Commonly used in polymerization, etching, and soil conditioning.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="row g-4" id="products-container">
+        <!-- Products will be loaded here from JSON -->
       </div>
     </section>
 
@@ -361,5 +311,27 @@
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("products_detail.json")
+        .then((response) => response.json())
+        .then((products) => {
+          const container = document.getElementById("products-container");
+          products.forEach((product) => {
+            const card = `
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                  <img src="${product.image}" class="card-img-top" alt="${product.alt}" />
+                  <div class="card-body">
+                    <h5 class="card-title">${product.title}</h5>
+                    <p class="card-text">${product.description}</p>
+                  </div>
+                </div>
+              </div>
+            `;
+            container.innerHTML += card;
+          });
+        })
+        .catch((error) => console.error("Error loading products:", error));
+    </script>
   </body>
 </html>
