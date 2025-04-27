@@ -1,27 +1,58 @@
 [
-    {
-      "title": "Ammonium Persulphate",
-      "description": "A strong oxidizing agent used in various industrial applications.",
-      "image": "img/pro1.jpg",
-      "alt": "Ammonium Persulphate"
-    },
-    {
-      "title": "Sodium Persulphate",
-      "description": "Used as a bleaching agent and an etchant for printed circuit boards.",
-      "image": "img/pro2.jpg",
-      "alt": "Sodium Persulphate"
-    },
-    {
-      "title": "Ammonium Sulphate",
-      "description": "An efficient fertilizer for various soil types and industrial uses.",
-      "image": "img/pro1.jpg",
-      "alt": "Ammonium Sulphate"
-    },
-    {
-      "title": "Potassium Persulphate",
-      "description": "Commonly used in polymerization, etching, and soil conditioning.",
-      "image": "img/pro3.jpg",
-      "alt": "Potassium Persulphate"
-    }
-  ]
   
+
+
+
+  {
+    "title": "Ammonium Persulphate",
+    "description": "A strong oxidizing agent used in various industrial applications.",
+    "image": "img/pro1.jpg",
+    "alt": "Ammonium Persulphate",
+    "molecularFormula": "NH4S2O8",
+    "matterState": "Solid",
+    "appearance": "White crystalline powder",
+    "grade": "Industrial Grade",
+    "packaging": "25 kg bag",
+    "storageHandling": "Store in a cool, dry place. Avoid exposure to moisture and heat.",
+    "applications": "Used in polymerization, as an oxidizing agent in chemical reactions, and in the manufacture of bleaches."
+  },
+  {
+    "title": "Sodium Persulphate",
+    "description": "Used as a bleaching agent and an etchant for printed circuit boards.",
+    "image": "img/pro2.jpg",
+    "alt": "Sodium Persulphate",
+    "molecularFormula": "Na2S2O8",
+    "matterState": "Solid",
+    "appearance": "White crystalline powder",
+    "grade": "Reagent Grade",
+    "packaging": "20 kg drum",
+    "storageHandling": "Store in a dry, cool place. Protect from moisture and direct sunlight.",
+    "applications": "Used in the cleaning and etching of printed circuit boards (PCBs), as well as a bleaching agent in various industrial processes."
+  },
+  {
+    "title": "Ammonium Sulphate",
+    "description": "An efficient fertilizer for various soil types and industrial uses.",
+    "image": "img/pro1.jpg",
+    "alt": "Ammonium Sulphate",
+    "molecularFormula": "(NH4)2SO4",
+    "matterState": "Solid",
+    "appearance": "White crystalline solid",
+    "grade": "Agricultural Grade",
+    "packaging": "50 kg bag",
+    "storageHandling": "Store in a cool, dry place. Keep away from moisture.",
+    "applications": "Primarily used as a nitrogen fertilizer for crops, but also used in industrial applications like water treatment."
+  },
+  {
+    "title": "Potassium Persulphate",
+    "description": "Commonly used in polymerization, etching, and soil conditioning.",
+    "image": "img/pro3.jpg",
+    "alt": "Potassium Persulphate",
+    "molecularFormula": "K2S2O8",
+    "matterState": "Solid",
+    "appearance": "White crystalline powder",
+    "grade": "Technical Grade",
+    "packaging": "25 kg bag",
+    "storageHandling": "Store in a dry, cool environment. Avoid moisture and high temperatures.",
+    "applications": "Used as a polymerization initiator, in soil conditioning, and in various other chemical applications."
+  }
+]
