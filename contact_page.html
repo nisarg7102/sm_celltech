@@ -41,16 +41,25 @@
           <h2 class="text-2xl font-semibold mb-4">Send us a Message</h2>
 
           <form
+            id="contactForm"
             action="https://formsubmit.co/nisarg7102@gmail.com"
             method="POST"
           >
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
             <input
               type="hidden"
               name="_next"
               value="https://sm-celltech-official.netlify.app/thank-you"
             />
+            <script>
+              const form = document.getElementById("contactForm");
+
+              form.addEventListener("submit", function () {
+                setTimeout(function () {
+                  form.reset();
+                }, 1000); // Reset form after 1 second (after submission trigger)
+              });
+            </script>
 
             <!-- Name -->
             <div class="mb-4">
