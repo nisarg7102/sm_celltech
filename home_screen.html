@@ -38,9 +38,15 @@
       /* Carousel */
       .carousel-item img {
         width: 100%;
-        height: 500px;
-        object-fit: cover;
-        object-position: center center; /* Center the image nicely */
+        height: 500px; /* fixed height */
+        object-fit: cover; /* fills and crops nicely */
+        object-position: top center; /* smartly starts from top */
+      }
+
+      @media (min-width: 768px) {
+        .carousel-item img {
+          object-position: center center; /* on bigger screens, center it */
+        }
       }
 
       /* Footer */
