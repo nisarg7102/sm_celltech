@@ -1,9 +1,185 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="refresh" content="0; url=/contact_page.html" />
-    </head>
-    <body>
-        Redirecting...
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/sm_Cell1-logo-header.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SM Celltech LLP | Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+      <div class="container mx-auto text-center">
+        <h1 class="text-3xl font-semibold">Contact Us</h1>
+        <p class="mt-2">
+          We're here to help. Reach out with any questions or concerns.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 p-8 bg-white shadow-md rounded-md">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left Image & Quote -->
+        <div>
+          <img
+            src="call.jpg"
+            alt="Chemical Image"
+            class="rounded-md mb-4"
+            height="400px"
+            width="400px"
+          />
+          <blockquote class="text-lg italic text-gray-700">
+            "The key is not to prioritize what's on your schedule, but to
+            schedule your priorities." - Stephen Covey
+          </blockquote>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Send us a Message</h2>
+
+          <form
+            id="contactForm"
+            action="https://formsubmit.co/nisarg7102@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://sm-celltech-official.netlify.app/thank-you"
+            />
+            <script>
+              const form = document.getElementById("contactForm");
+
+              form.addEventListener("submit", function () {
+                setTimeout(function () {
+                  form.reset();
+                }, 1000); // Reset form after 1 second (after submission trigger)
+              });
+            </script>
+
+            <!-- Name -->
+            <div class="mb-4">
+              <label
+                for="name"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Name:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+              <label
+                for="email"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <!-- Product Dropdown -->
+            <!-- <div class="mb-4">
+              <label
+                for="product"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Product:</label
+              >
+              <select
+                id="product"
+                name="product"
+                required
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              >
+                <option value="">Select a Product</option>
+                <option value="Ammonium persulphate">
+                  Ammonium persulphate
+                </option>
+                <option value="Potassium persulphate">
+                  Potassium persulphate
+                </option>
+                <option value="Sodium persulphate">Sodium persulphate</option>
+                <option value="Ammonium sulphate">Ammonium sulphate</option>
+              </select>
+            </div> -->
+
+            <!-- Message -->
+            <div class="mb-4">
+              <label
+                for="message"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Message:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <!-- Company Address -->
+        <div>
+          <h2 class="text-3xl text-blue-700 font-semibold mb-4">
+            Company Address
+          </h2>
+          <address class="text-gray-700 not-italic">
+            Office: Opp. H.E.S. School, <br />
+            Sara Road, Halvad - 363330<br />
+            Gujarat, India
+            <br /><br />
+            <strong class="text-blue-600">Mr Sanjay Patel</strong><br />
+            Phone: +91 70164 81544<br /><br />
+            <strong class="text-blue-600">Mr Sureshbhai Patel</strong><br />
+            Phone: +91 88495 12998<br /><br />
+            <strong class="text-blue-600">SM Celltech</strong><br />
+            Email: smcelltech01@gmail.com
+          </address>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 SM Celltech. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Optional: Email Decode Script -->
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+  </body>
 </html>
