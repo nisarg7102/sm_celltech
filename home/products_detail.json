@@ -4,6 +4,7 @@
 
 
   {
+    "id":"1",
     "title": "Ammonium Persulphate",
     "description": "A strong oxidizing agent used in various industrial applications.",
     "image": "/img/pro1.jpg",
@@ -17,6 +18,7 @@
     "applications": "Used in polymerization, as an oxidizing agent in chemical reactions, and in the manufacture of bleaches."
   },
   {
+    "id":"2",
     "title": "Sodium Persulphate",
     "description": "Used as a bleaching agent and an etchant for printed circuit boards.",
     "image": "/img/pro2.jpg",
@@ -30,6 +32,7 @@
     "applications": "Used in the cleaning and etching of printed circuit boards (PCBs), as well as a bleaching agent in various industrial processes."
   },
   {
+    "id":"3",
     "title": "Ammonium Sulphate",
     "description": "An efficient fertilizer for various soil types and industrial uses.",
     "image": "/img/pro1.jpg",
@@ -43,6 +46,7 @@
     "applications": "Primarily used as a nitrogen fertilizer for crops, but also used in industrial applications like water treatment."
   },
   {
+    "id":"4",
     "title": "Potassium Persulphate",
     "description": "Commonly used in polymerization, etching, and soil conditioning.",
     "image": "/img/pro3.jpg",
