@@ -33,12 +33,12 @@
         <!-- Product Detail Script -->
         <script>
             const params = new URLSearchParams(window.location.search);
-            const productTitle = params.get('id');
+            const productId = parseInt(params.get('id'), 10); // Get numeric ID from URL
 
-            fetch('products_detail.json')
+            fetch('/products_detail.json') // Assuming the JSON is in the root
                 .then((response) => response.json())
                 .then((products) => {
-                    const product = products.find((p) => p.title === decodeURIComponent(productTitle));
+                    const product = products.find((p) => p.id === productId); // Compare with numeric ID
 
                     if (!product) {
                         document.getElementById('product-detail').innerHTML = `
