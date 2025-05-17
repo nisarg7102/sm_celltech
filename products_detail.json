@@ -6,7 +6,7 @@
   {
     "title": "Ammonium Persulphate",
     "description": "A strong oxidizing agent used in various industrial applications.",
-    "image": "img/pro1.jpg",
+    "image": "/img/pro1.jpg",
     "alt": "Ammonium Persulphate",
     "molecularFormula": "NH4S2O8",
     "matterState": "Solid",
@@ -19,7 +19,7 @@
   {
     "title": "Sodium Persulphate",
     "description": "Used as a bleaching agent and an etchant for printed circuit boards.",
-    "image": "img/pro2.jpg",
+    "image": "/img/pro2.jpg",
     "alt": "Sodium Persulphate",
     "molecularFormula": "Na2S2O8",
     "matterState": "Solid",
@@ -32,7 +32,7 @@
   {
     "title": "Ammonium Sulphate",
     "description": "An efficient fertilizer for various soil types and industrial uses.",
-    "image": "img/pro1.jpg",
+    "image": "/img/pro1.jpg",
     "alt": "Ammonium Sulphate",
     "molecularFormula": "(NH4)2SO4",
     "matterState": "Solid",
@@ -45,7 +45,7 @@
   {
     "title": "Potassium Persulphate",
     "description": "Commonly used in polymerization, etching, and soil conditioning.",
-    "image": "img/pro3.jpg",
+    "image": "/img/pro3.jpg",
     "alt": "Potassium Persulphate",
     "molecularFormula": "K2S2O8",
     "matterState": "Solid",
